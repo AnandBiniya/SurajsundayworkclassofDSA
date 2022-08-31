@@ -1,0 +1,29 @@
+var arr=[[1,2,3,4,5,6,7],
+        [1,2,3,4,5,6,7],
+        [1,2,3,4,5,6,7],
+        [1,2,3,4,5,6,7],
+        [1,2,3,4,5,6,7],
+        [1,2,3,4,5,6,7],
+        [1,2,3,4,5,6,7]]
+        // 432123456765
+      var s=arr.length   
+      //console.log(s)
+   var bag=""
+   
+   for(var i=0,j=Math.floor(s/2);i<=Math.floor(s/2),j>=0;i++,j--){
+    bag=bag+arr[i][j]+" "
+    //console.log(i,j)
+     
+   }
+   for(var i=Math.floor(s/2)+1,j=1;i<s-1,j<=Math.floor(s/2)-1;i++,j++){
+       bag=bag+arr[i][j]+" "
+   }
+   for(var i=s-1,j=Math.floor(s/2);i>=Math.floor(s/2),j<s;i--,j++){
+          bag=bag+arr[i][j]+" "
+   }
+     for(var i=Math.floor(s/2)-1,j=s-2;i>0,j>=Math.floor(s/2)+1;i--,j--){
+          bag=bag+arr[i][j]+" "
+   }
+   
+ 
+   console.log(bag)
